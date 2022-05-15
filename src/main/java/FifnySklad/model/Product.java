@@ -1,8 +1,17 @@
 package FifnySklad.model;
 
-import javax.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import javax.persistence.*;
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 @Entity
+@Table(name = "Produkt")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
