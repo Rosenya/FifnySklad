@@ -11,4 +11,17 @@ public class HelloController {
         return "index";
     }
 
+    @GetMapping("/onas")
+    public String getOnas() {
+
+        return "onas";
+    }
+
+    @GetMapping("/produkt1")
+    public String getProdukt1() {
+
+        return "produkt1";
+
+
+    }
 }
