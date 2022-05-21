@@ -24,4 +24,19 @@ public class HelloController {
 
 
     }
+
+    @GetMapping("/formularz")
+    public String getFormularz() {
+
+        return "formularz";
+
+    }
+    @GetMapping("/podsumowanie")
+    public String getPodsumowanie() {
+
+        return "podsumowanie";
+
+    }
+
+
 }
