@@ -23,6 +23,7 @@ public class Category {
     @Column(length = 30)
     private String name;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
+    @OneToMany(cascade = CascadeType.REFRESH,mappedBy = "category")
     private Set<Product> products = new HashSet<>();
+
 }

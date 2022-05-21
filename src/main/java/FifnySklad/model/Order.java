@@ -4,10 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,13 +24,18 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @DateTimeFormat(pattern = "dd-mm-yyyy")
+    @CreationTimestamp
     private Date creationDate;
 
-    @OneToOne
+    @ManyToOne
+    @JoinColumn(name = "id")
     private Client client;
 
-    @OneToOne
-    private Product product;
-
+    @ManyToMany
+    @JoinTable(
+            name = "orderSet",
+            joinColumns = @JoinColumn(name = "produkt_id"),
+            inverseJoinColumns = @JoinColumn(name = "zamowienie_id"))
+    private Set <Product> productSet;
 
 }
