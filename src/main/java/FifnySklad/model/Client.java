@@ -31,8 +31,6 @@ public class Client {
     @Column(length = 10)
     private String phoneNumber;
 
-
-
     @OneToMany(cascade = CascadeType.REFRESH, mappedBy = "id")
 
     private Set<Order> order = new HashSet<>();

@@ -28,14 +28,14 @@ public class Order {
     private Date creationDate;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "client_id")
     private Client client;
 
-    @ManyToMany
-    @JoinTable(
-            name = "orderSet",
-            joinColumns = @JoinColumn(name = "produkt_id"),
-            inverseJoinColumns = @JoinColumn(name = "zamowienie_id"))
-    private Set <Product> productSet;
+//    @ManyToMany
+//    @JoinTable(
+//            name = "orderSet",
+//            joinColumns = @JoinColumn(name = "produkt_id"),
+//            inverseJoinColumns = @JoinColumn(name = "zamowienie_id"))
+//    private Set <Product> productSet;
 
 }

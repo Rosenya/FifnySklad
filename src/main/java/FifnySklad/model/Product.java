@@ -31,11 +31,11 @@ public class Product {
     @JoinColumn(name = "category_id")
      private Category category;
 
-    @ManyToMany
-//    @JoinTable(
-//            name = "id",
-//            joinColumns = @JoinColumn(name = "student_id"),
-//            inverseJoinColumns = @JoinColumn(name = "course_id"))
-    Set<Order> orderSet = new HashSet<>();
+//    @ManyToMany
+////    @JoinTable(
+////            name = "id",
+////            joinColumns = @JoinColumn(name = "student_id"),
+////            inverseJoinColumns = @JoinColumn(name = "course_id"))
+//    Set<Order> orderSet = new HashSet<>();
 
 }
