@@ -33,7 +33,7 @@ public class ProductService {
         log.info("Usunięto produkt o id: " + id);
     }
     //lista wszystkich prodyktów
-    public List <Product> products(){
+    public List <Product> getProducts(){
         return productRepository.findAll();
     }
     //pokazanie produktu po id
