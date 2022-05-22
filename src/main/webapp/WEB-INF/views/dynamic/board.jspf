@@ -1,13 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 
 <!-- Footer -->
-<footer class="sticky-footer bg-white">
-    <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-            <span>Copyright &copy; SDACADEMY 2020</span>
-        </div>
-    </div>
-</footer>
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Fifny Skład</p></div>
+        </footer>
 <!-- End of Footer -->
 
 </div>

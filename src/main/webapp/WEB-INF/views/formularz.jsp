@@ -52,6 +52,8 @@
 
             </div>
         </div>
+        <%@include file="dynamic/board.jspf"%>
         <%@include file="dynamic/javaScript.jspf"%>
+
     </body>
 </html>
