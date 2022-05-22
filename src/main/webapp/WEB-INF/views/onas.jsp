@@ -3,6 +3,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<!-- Navigation-->
+<%@include file="dynamic/navigationMain.jspf" %>
 
 
 <html lang="en">
@@ -270,5 +272,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <%@include file="dynamic/board.jspf"%>
+        <%@include file="dynamic/javaScript.jspf"%>
     </body>
 </html>
