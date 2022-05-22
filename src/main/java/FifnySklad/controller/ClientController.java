@@ -21,7 +21,7 @@ public class ClientController {
         this.clientService = clientService;
     }
 
-    //getAllClients, potrzebujemy widoku widoku
+    //getAllClients, potrzebujemy widoku
     @GetMapping("/clients")
     public String getClientList(Model model){
         List<Client> clients = clientService.getClients();

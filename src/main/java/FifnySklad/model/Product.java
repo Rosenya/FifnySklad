@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,10 +27,15 @@ public class Product {
     private String description;
 
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "category_id")
      private Category category;
 
-
+//    @ManyToMany
+////    @JoinTable(
+////            name = "id",
+////            joinColumns = @JoinColumn(name = "student_id"),
+////            inverseJoinColumns = @JoinColumn(name = "course_id"))
+//    Set<Order> orderSet = new HashSet<>();
 
 }

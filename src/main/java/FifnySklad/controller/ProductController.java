@@ -1,6 +1,5 @@
 package FifnySklad.controller;
 
-import FifnySklad.model.Client;
 import FifnySklad.model.Product;
 import FifnySklad.service.ClientService;
 import FifnySklad.service.ProductService;
@@ -16,26 +15,26 @@ import java.util.List;
 
 @Controller
 public class ProductController {
-
     private final ProductService productService;
+//    private final ClientService clientService;
+
 
     public ProductController(ProductService productService) {
         this.productService = productService;
     }
 
-    //getAllProduct, potrzebujemy widoku widoku
     @GetMapping("/products")
-    public String getProductList(Model model){
-        List<Product> productList = productService.getProducts();
-        model.addAttribute("product", productList);
-        return "index";
-    }
-    //widok dla nowego klienta
-    @GetMapping("/addProduct")
-    public String addProduct(){
-        return "products/addNewProduct";
+    public String getProducts (Model model){
+        List<Product> product = productService.getProducts();
+        model.addAttribute("product", product);
+        return "products/produkt2";
     }
 
+    @GetMapping("/addProduct")
+    public String addClient(){
+        return "products/addNewProduct";
+
+    }
     @GetMapping("/editProduct/{id}")
     public String getEditProduct(@PathVariable("id") Long id, Model model){
         Product product = productService.getProduct(id);
@@ -47,13 +46,12 @@ public class ProductController {
         productService.editProduct(newProduct);
         return new RedirectView("/editProduct/{id}");
     }
+    @PostMapping("/editProduct/{id}")
+    public RedirectView deleteProduct(@PathVariable("id") Long id){
+        productService.deleteByIdProduct(id);
+        return new RedirectView("products");
+    }
 
-//    @PostMapping("/editProduct/{id}")
-//    public RedirectView deleteProduct(@PathVariable("id") Long id){
-//        productService.deleteProductById(id);
-//        return new RedirectView("product");
-//    }
 
 
 }
-

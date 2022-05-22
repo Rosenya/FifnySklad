@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -28,11 +31,8 @@ public class Client {
     @Column(length = 10)
     private String phoneNumber;
 
+    @OneToMany(cascade = CascadeType.REFRESH, mappedBy = "id")
 
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "order_id")
-    private Order order;
-
+    private Set<Order> order = new HashSet<>();
 
 }

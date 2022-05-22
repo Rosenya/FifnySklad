@@ -28,7 +28,7 @@ public class ProductService {
         productRepository.save(product);
     }
     //usuwanie produktu
-    public void deleteProduct(Long id){
+    public void deleteByIdProduct(Long id){
         productRepository.deleteById(id);
         log.info("Usunięto produkt o id: " + id);
     }
