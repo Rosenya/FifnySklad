@@ -18,12 +18,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" href='<c:url value="/"/>'>Fifny Sklep</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Register</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,7 +50,7 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../../resources/static/gallery/produkt1.jpg" alt="Zestaw DIY Terrazo"/></div>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../../../resources/static/gallery/produkt1.jpg" alt="Zestaw DIY Terrazo"/></div>
                     <div class="col-md-6">
                         <div class="small mb-1">SKU: FS-001</div>
                         <h1 class="display-5 fw-bolder">Zestaw DIY Terrazo</h1>

@@ -31,7 +31,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Wszystkie produkty</a></li>
+                                <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                                 <li><a class="dropdown-item" href="#!">Popularne</a></li>
                                 <li><a class="dropdown-item" href="#!">Nowości</a></li>
