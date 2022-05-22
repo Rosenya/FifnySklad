@@ -54,7 +54,7 @@
                 <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../../resources/static/gallery/produkt1.jpg" alt="Zestaw DIY Terrazo"/></div>
                 <div class="col-md-6">
                     <div class="small mb-1">SKU: FS-001</div>
-                    <h1 class="display-5 fw-bolder">${title.name}/h1>
+                    <h1 class="display-5 fw-bolder">${title.name}</h1>
                     <div class="fs-5 mb-5">
                         <span class="text-decoration-line-through">140 zł</span>
                         <span>${title.price}</span>
