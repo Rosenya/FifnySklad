@@ -5,3 +5,16 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+
+// $(document).ready(function(){
+//     $('.sendButton').prop('disabled',true);
+//     $('#inputEmail').keyup(function(){
+//         if ($(this).val().length !=0)
+//             $('.sendValueButton').attr('disabled', false);
+//         else
+//             $('.sendValueButton').attr('disabled',true);
+//     })
+//
+// });
+

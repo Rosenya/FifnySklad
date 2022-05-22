@@ -1,12 +1,42 @@
 package FifnySklad.controller;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
+
     @GetMapping("/")
-    public String getIndex(){
+    public String getIndex() {
+
         return "index";
     }
+
+    @GetMapping("/onas")
+    public String getOnas() {
+
+        return "onas";
+    }
+
+    @GetMapping("/produkt1")
+    public String getProdukt1() {
+
+        return "produkt1";
+
+
+    }
+
+    @GetMapping("/formularz")
+    public String getFormularz() {
+
+        return "formularz";
+
+    }
+    @GetMapping("/podsumowanie")
+    public String getPodsumowanie() {
+
+        return "podsumowanie";
+
+    }
+
+
 }

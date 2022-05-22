@@ -1,25 +1,9 @@
-<!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@include file="dynamic/css.jspf" %>
 
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-
-        <title>Fifny Sklep - Fajny jest</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/resources/css/styles.css" rel="stylesheet" />
-    </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,7 +39,9 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">O NAS</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Cześć Witamy Cię na naszym profilu. FiFNY skład to my, Kasia i Agata - dwie kreatywne fiFNE dziewczyny, które tworzą dla Was pudełka pełne dobroci Jest nam niezmiernie miło, że jesteś tu z nami. Jeśli chcesz sprawić prezent sobie lub komuś zachęcamy do złożenia zamówienia poprzez wiadomość priv
+                        Ściskamy ciepło
+                        K&A</p>
                 </div>
             </div>
         </header>
