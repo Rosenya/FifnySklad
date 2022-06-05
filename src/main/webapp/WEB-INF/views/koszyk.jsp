@@ -299,6 +299,6 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-    
+        <%@include file="dynamic/board.jspf"%>
   </body>
 </html>

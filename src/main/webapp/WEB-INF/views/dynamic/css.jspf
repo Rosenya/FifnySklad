@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -8,7 +9,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
 
-        <title>Fifny Sklep - Fajny jest</title>
+        <title>fiFNY Skład - Sklep Pełen Dobroci</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -45,4 +46,7 @@
 
     <link rel="stylesheet" href="/resources/cart/css/style.css">
 
+<!--#background {
+    background-color: #F0D5B8;
+}-->
 </head>
