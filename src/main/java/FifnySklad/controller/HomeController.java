@@ -17,6 +17,13 @@ public class HomeController {
         return "onas";
     }
 
+    @GetMapping("/adminpanel")
+    public String getAdmin() {
+
+        return "adminPanel";
+    }
+
+
     @GetMapping("/produkt1")
     public String getProdukt1() {
 

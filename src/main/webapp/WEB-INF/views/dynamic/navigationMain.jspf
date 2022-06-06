@@ -13,8 +13,8 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popularne</a></li>
-                                <li><a class="dropdown-item" href="#!">Nowości</a></li>
+                                <li><a class="dropdown-item" href="#!">Świece</a></li>
+                                <li><a class="dropdown-item" href="#!">Dekoracje</a></li>
                             </ul>
                         </li>
                     </ul>

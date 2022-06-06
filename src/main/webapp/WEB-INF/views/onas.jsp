@@ -8,11 +8,11 @@
         <!-- Navigation-->
         <%@include file="dynamic/navigationMain.jspf" %>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="bg-fifny py-5">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
+                <div class="text-center text-fifny">
                     <h1 class="display-4 fw-bolder">O NAS</h1>
-                    <p class="lead fw-normal text-white-50 mb-0" text-align: center;>Cześć Witamy Cię na naszym profilu.
+                    <p class="lead fw-normal text-fifny-50 mb-0" text-align: center;>Cześć Witamy Cię na naszym profilu.
                     FiFNY skład to my, Kasia i Agata - dwie kreatywne fiFNE dziewczyny, które tworzą dla Was pudełka
                     pełne dobroci Jest namniezmiernie miło, że jesteś tu z nami. Jeśli chcesz sprawić prezent sobie lub
                      komuś zachęcamy do złożenia zamówienia

@@ -62,6 +62,10 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --bs-fifny: #f0d5b8;
+  --bs-fifny-rgb: 240, 213, 184;
+  --bs-fifny-font: #cd9341;
+  --bs-fifny-font-rgb: 205, 147, 65;
 }
 
 *,
@@ -7764,6 +7768,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-fifny {
+  --bs-bg-opacity: 1;
+  color: rgba(var(--bs-fifny-font-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -7782,6 +7791,11 @@ textarea.form-control-lg {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.text-fifny-50 {
+  --bs-text-opacity: 1;
+  color: rgba(205, 147, 65;, 0.5) !important;
 }
 
 .text-reset {
@@ -7858,6 +7872,11 @@ textarea.form-control-lg {
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-fifny {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-fifny-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
