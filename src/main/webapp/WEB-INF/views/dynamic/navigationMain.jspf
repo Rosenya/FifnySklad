@@ -17,6 +17,7 @@
                                 <li><a class="dropdown-item" href="#!">Dekoracje</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href='<c:url value="/adminpanel"/>'>Panel Administracyjny</a></li>
                     </ul>
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
