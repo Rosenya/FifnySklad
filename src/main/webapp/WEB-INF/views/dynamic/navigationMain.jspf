@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
- <!-- Navigation-->
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href='<c:url value="/"/>'>fiFNY skład</a>
@@ -9,15 +9,16 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href='<c:url value="/"/>'>Strona Główna</a></li>
                         <li class="nav-item"><a class="nav-link" href='<c:url value="/onas"/>'>O nas</a></li>
                         <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produkty</a>
-                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
-                              <li><hr class="dropdown-divider" /></li>
-                              <li><a class="dropdown-item" href="#!">Świece</a></li>
-                              <li><a class="dropdown-item" href="#!">Dekoracje</a></li>
-                              <li><a class="dropdown-item" href="#!">Zestawy</a></li>
-                           </ul>
-                         </li>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produkty</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Świece</a></li>
+                                <li><a class="dropdown-item" href="#!">Dekoracje</a></li>
+                                <li><a class="dropdown-item" href="#!">Pachnidła</a></li>
+                                <li><a class="dropdown-item" href="#!">Zestawy</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href='<c:url value="/adminpanel"/>'>Panel Administracyjny</a></li>
                     </ul>
                     <form class="d-flex">
@@ -27,6 +28,7 @@
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
+
                 </div>
             </div>
         </nav>

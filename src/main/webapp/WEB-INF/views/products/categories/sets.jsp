@@ -7,15 +7,6 @@
     <body>
         <!-- Navigation-->
         <%@include file="dynamic/navigationMain.jspf" %>
-        <!-- Header-->
-        <header class="bg-fifny py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-fifny">
-                    <h1 class="display-4 fw-bolder">fiFNY skład</h1>
-                    <p class="lead fw-normal text-fifny-50 mb-0">TYLE DOBROCI - dla Ciebie</p>
-                </div>
-            </div>
-        </header>
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
@@ -222,5 +213,6 @@
         <!-- Footer-->
         <%@include file="dynamic/board.jspf"%>
         <%@include file="dynamic/javaScript.jspf"%>
+
     </body>
 </html>
