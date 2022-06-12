@@ -26,10 +26,10 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
                                 <li><hr class="dropdown-divider"/></li>
-                                <li><a class="dropdown-item" href="#!">Świece</a></li>
-                                <li><a class="dropdown-item" href="#!">Dekoracje</a></li>
-                                <li><a class="dropdown-item" href="#!">Pachnidła</a></li>
-                                <li><a class="dropdown-item" href="#!">Zestawy</a></li>
+                                <li><a class="dropdown-item" href="<c:url value="/swiece"/>">Świece</a></li>
+                                <li><a class="dropdown-item" href="<c:url value="/dekoracje"/>">Dekoracje</a></li>
+                                <li><a class="dropdown-item" href="<c:url value="/pachnidla"/>">Pachnidła</a></li>
+                                <li><a class="dropdown-item" href="<c:url value="/zestawy"/>">Zestawy</a></li>
                             </ul>
                         </li>
                         <sec:authorize access="hasRole('ADMIN')">
@@ -40,7 +40,8 @@
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
-                            Koszyk
+                            <a href='<c:url value="/koszyk"/>'>
+                            Koszyk</a>
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>

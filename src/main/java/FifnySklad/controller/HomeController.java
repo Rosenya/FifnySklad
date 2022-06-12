@@ -23,6 +23,12 @@ public class HomeController {
         return "adminPanel";
     }
 
+    @GetMapping("/koszyk")
+    public String getCart() {
+
+        return "koszyk";
+    }
+
 
     @GetMapping("/produkt1")
     public String getProdukt1() {
@@ -43,6 +49,30 @@ public class HomeController {
 
         return "podsumowanie";
 
+    }
+
+    @GetMapping("/swiece")
+    public String getSwiece() {
+
+        return "swiece";
+    }
+
+    @GetMapping("/dekoracje")
+    public String getDekoracje() {
+
+        return "dekoracje";
+    }
+
+    @GetMapping("/pachnidla")
+    public String getPachnidla() {
+
+        return "pachnidla";
+    }
+
+    @GetMapping("/zestawy")
+    public String getZestawy() {
+
+        return "zestawy";
     }
 
 
