@@ -31,7 +31,7 @@ public class Cart {
 //            entries.put(productName.toUpperCase(),entry);
 //        }
 //    }
-
+//
     public void removeProduct(String productName){
         CartEntry productEntry = entries.get(productName.toUpperCase());
         if(productEntry!=null){
