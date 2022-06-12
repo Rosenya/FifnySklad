@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <html lang="pl">
@@ -45,29 +46,33 @@
             </div>
         </nav>
         <!-- Product section-->
+        <form method="post" action='<c:url value="/produkt1"/>'>
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../../resources/static/gallery/produkt1.jpg" alt="Zestaw DIY Terrazo"/></div>
                     <div class="col-md-6">
-                        <div class="small mb-1">SKU: FS-001</div>
+                        <div> <input class="small mb-1" id="nameSKU" type="text" name="SKU" value="FS-001">SKU: FS-001 </input> </div>
+
                         <h1 class="display-5 fw-bolder">Zestaw DIY Terrazo</h1>
                         <div class="fs-5 mb-5">
-                            <span class="text-decoration-line-through">140 zł</span>
+                            <span class="text-decoration-line-through" >140 zł</span>
                             <span>89 zł</span>
                         </div>
                         <p class="lead">Zestaw terrazzo to: - marmurkowe naczynka - certyfikowany wosk sojowy bez GMO 100g - olejek zapachowy 10ml - zapałki w fiFNEJ buteleczce - ekologiczne płatki róży Wszystko pakujemy w nasze eko pudełko wypełnione delikatną i elegancką bibułą.</p>
                         <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i>
-                                Dodaj do koszyka
-                            </button>
+                            <input class="form-control text-center me-3" id="inputQuantity" name="quantity" type="num" value="1" style="max-width: 3rem" />
+<%--                            <button class="btn btn-outline-dark flex-shrink-0" type="button">--%>
+<%--                                <i class="bi-cart-fill me-1"></i>--%>
+<%--                                Dodaj do koszyka--%>
+<%--                            </button>--%>
+                            <input class="btn btn-success pull-left" type="submit" value="Dodaj do koszyka" id="dodajDoKoszyka"> </input>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        </form>
         <!-- Related items section-->
         <section class="py-5 bg-light">
             <div class="container px-4 px-lg-5 mt-5">

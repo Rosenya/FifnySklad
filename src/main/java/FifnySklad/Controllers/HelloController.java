@@ -17,26 +17,39 @@ public class HelloController {
         return "onas";
     }
 
-    @GetMapping("/produkt1")
-    public String getProdukt1() {
+//    @GetMapping("/produkt1")
+//    public String getProdukt1() {
+//
+//        return "produkt1";
+//
+//
+//    }
 
-        return "produkt1";
-
-
-    }
-
-    @GetMapping("/formularz")
-    public String getFormularz() {
-
-        return "formularz";
-
-    }
+    //    @GetMapping("/formularz")
+//    public String getFormularz() {
+//
+//        return "formularz";
+//
+//    }
     @GetMapping("/podsumowanie")
     public String getPodsumowanie() {
 
         return "podsumowanie";
 
     }
+
+    @GetMapping("/koszyk")
+    public String getKoszyk() {
+
+        return "koszyk";
+
+    }
+    @GetMapping("/adminpanel")
+    public String getAdmin() {
+
+        return "adminPanel";
+    }
+
 
 
 }

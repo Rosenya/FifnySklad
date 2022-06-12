@@ -11285,4 +11285,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+  .hide {
+    font-size: 0px;
+    margin: 0;
+    padding: 0;
+  }
+
 }
