@@ -26,10 +26,10 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
                                 <li><hr class="dropdown-divider"/></li>
-                                <li><a class="dropdown-item" href="<c:url value="/swiece"/>">Świece</a></li>
-                                <li><a class="dropdown-item" href="<c:url value="/dekoracje"/>">Dekoracje</a></li>
-                                <li><a class="dropdown-item" href="<c:url value="/pachnidla"/>">Pachnidła</a></li>
-                                <li><a class="dropdown-item" href="<c:url value="/zestawy"/>">Zestawy</a></li>
+                                <li><a class="dropdown-item" href='<c:url value="/swiece"/>'>Świece</a></li>
+                                <li><a class="dropdown-item" href='<c:url value="/dekoracje"/>'>Dekoracje</a></li>
+                                <li><a class="dropdown-item" href='<c:url value="/pachnidla"/>'>Pachnidła</a></li>
+                                <li><a class="dropdown-item" href='<c:url value="/zestawy"/>'>Zestawy</a></li>
                             </ul>
                         </li>
                         <sec:authorize access="hasRole('ADMIN')">

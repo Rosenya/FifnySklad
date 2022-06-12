@@ -3,11 +3,12 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <jsp:useBean id="now" class="java.util.Date"/>
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="dynamic/css.jspf" %>
+<%@include file="../../dynamic/css.jspf" %>
 
     <body>
         <!-- Navigation-->
-        <%@include file="dynamic/navigationMain.jspf" %>
+        <%@include file="../../dynamic/navigationMain.jspf" %>
+
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
@@ -212,8 +213,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <%@include file="dynamic/board.jspf"%>
-        <%@include file="dynamic/javaScript.jspf"%>
-
+        <%@include file="../../dynamic/board.jspf"%>
+        <%@include file="../../dynamic/javaScript.jspf"%>
     </body>
 </html>

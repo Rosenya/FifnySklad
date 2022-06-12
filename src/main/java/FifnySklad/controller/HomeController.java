@@ -54,25 +54,25 @@ public class HomeController {
     @GetMapping("/swiece")
     public String getSwiece() {
 
-        return "swiece";
+        return "products/categories/swiece";
     }
 
     @GetMapping("/dekoracje")
     public String getDekoracje() {
 
-        return "dekoracje";
+        return "products/categories/dekoracje";
     }
 
     @GetMapping("/pachnidla")
     public String getPachnidla() {
 
-        return "pachnidla";
+        return "products/categories/pachnidla";
     }
 
     @GetMapping("/zestawy")
     public String getZestawy() {
 
-        return "zestawy";
+        return "products/categories/zestawy";
     }
 
 
