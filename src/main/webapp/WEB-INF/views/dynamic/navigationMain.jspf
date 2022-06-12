@@ -1,8 +1,21 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container px-4 px-lg-5 justify-content-end">
+                  <div>
+                    <a class="nav-link float-sm-start fs-5" href='<c:url value="/login"/>'>Login</a>
+                    <a class="nav-link float-sm-start" >/</a>
+                    <a class="nav-link float-sm-end fs-5" href='<c:url value="/register"/>'>Rejestracja</a>
+                    </div>
+                </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href='<c:url value="/"/>'>fiFNY skład</a>
+                <!-- Facebook -->
+                 <a class="nav-link float-sm-start" href='https://www.facebook.com/fifny.sklad' target="_blank"><img src="../../resources/static/gallery/fb.png" width="10" height="20"></a>
+                 <!-- Instagram -->
+                 <a class="nav-link float-sm-start" href='https://www.instagram.com/fifny.sklad/' target="_blank"><img src="../../resources/static/gallery/insta.png"width="20" height="20"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -12,14 +25,17 @@
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produkty</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="http://localhost:8080/products/">Wszystkie produkty</a></li>
-                                <li><hr class="dropdown-divider" /></li>
+                                <li><hr class="dropdown-divider"/></li>
                                 <li><a class="dropdown-item" href="#!">Świece</a></li>
                                 <li><a class="dropdown-item" href="#!">Dekoracje</a></li>
                                 <li><a class="dropdown-item" href="#!">Pachnidła</a></li>
                                 <li><a class="dropdown-item" href="#!">Zestawy</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href='<c:url value="/adminpanel"/>'>Panel Administracyjny</a></li>
+                        <sec:authorize access="hasRole('ADMIN')">
+                           <li class="nav-item"><a class="nav-link" href='<c:url value="/adminpanel"/>'>Panel Administracyjny</a></li>
+                        </sec:authorize>
+
                     </ul>
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
@@ -28,7 +44,6 @@
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
-
                 </div>
             </div>
         </nav>
