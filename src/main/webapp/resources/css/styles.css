@@ -3037,10 +3037,21 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+
 .btn-primary:hover {
   color: #fff;
   background-color: #0b5ed7;
   border-color: #0a58ca;
+}
+.btn-fifny {
+   color: #fff;
+   background-color: #f0d5b8;
+   border-color: #f0d5b8;
+ }
+.btn-fifny:hover {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color: #cd9341;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3048,18 +3059,37 @@ textarea.form-control-lg {
   border-color: #0a58ca;
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
+.btn-check:focus + .btn-fifny, .btn-fifny:focus {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color: #cd9341;
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
+  background-color: #f0d5b8;
   border-color: #0a53be;
+}
+.btn-check:checked + .btn-fifny, .btn-check:active + .btn-fifny, .btn-fifny:active, .btn-fifny.active, .show > .btn-fifny.dropdown-toggle {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color:#cd9341;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.btn-check:checked + .btn-fifny:focus, .btn-check:active + .btn-fifny:focus, .btn-fifny:active:focus, .btn-fifny.active:focus, .show > .btn-fifny.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(240, 213, 184, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
+}
+.btn-finy:disabled, .btn-fifny.disabled {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color: #cd9341;
 }
 
 .btn-secondary {
@@ -3276,10 +3306,16 @@ textarea.form-control-lg {
   color: #0d6efd;
   border-color: #0d6efd;
 }
-.btn-outline-primary:hover {
+
+.btn-outline-fifny {
+  color: #f0d5b8;
+  border-color: #f0d5b8;
+}
+
+.btn-outline-fifny:hover {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #f0d5b8;
+  border-color: #f0d5b8;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
