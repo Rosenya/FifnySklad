@@ -62,6 +62,10 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --bs-fifny: #f0d5b8;
+  --bs-fifny-rgb: 240, 213, 184;
+  --bs-fifny-font: #cd9341;
+  --bs-fifny-font-rgb: 205, 147, 65;
 }
 
 *,
@@ -3033,10 +3037,21 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+
 .btn-primary:hover {
   color: #fff;
   background-color: #0b5ed7;
   border-color: #0a58ca;
+}
+.btn-fifny {
+   color: #fff;
+   background-color: #f0d5b8;
+   border-color: #f0d5b8;
+ }
+.btn-fifny:hover {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color: #cd9341;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3044,18 +3059,37 @@ textarea.form-control-lg {
   border-color: #0a58ca;
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
+.btn-check:focus + .btn-fifny, .btn-fifny:focus {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color: #cd9341;
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
+  background-color: #f0d5b8;
   border-color: #0a53be;
+}
+.btn-check:checked + .btn-fifny, .btn-check:active + .btn-fifny, .btn-fifny:active, .btn-fifny.active, .show > .btn-fifny.dropdown-toggle {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color:#cd9341;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.btn-check:checked + .btn-fifny:focus, .btn-check:active + .btn-fifny:focus, .btn-fifny:active:focus, .btn-fifny.active:focus, .show > .btn-fifny.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(240, 213, 184, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
+}
+.btn-finy:disabled, .btn-fifny.disabled {
+  color: #fff;
+  background-color: #f0d5b8;
+  border-color: #cd9341;
 }
 
 .btn-secondary {
@@ -3272,10 +3306,16 @@ textarea.form-control-lg {
   color: #0d6efd;
   border-color: #0d6efd;
 }
-.btn-outline-primary:hover {
+
+.btn-outline-fifny {
+  color: #f0d5b8;
+  border-color: #f0d5b8;
+}
+
+.btn-outline-fifny:hover {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #f0d5b8;
+  border-color: #f0d5b8;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
@@ -7764,6 +7804,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-fifny {
+  --bs-bg-opacity: 1;
+  color: rgba(var(--bs-fifny-font-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
@@ -7782,6 +7827,11 @@ textarea.form-control-lg {
 .text-white-50 {
   --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.text-fifny-50 {
+  --bs-text-opacity: 1;
+  color: rgba(205, 147, 65;, 0.5) !important;
 }
 
 .text-reset {
@@ -7858,6 +7908,11 @@ textarea.form-control-lg {
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-fifny {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-fifny-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
@@ -11244,6 +11299,10 @@ textarea.form-control-lg {
   .fs-4 {
     font-size: 1.5rem !important;
   }
+
+  .fs-5 {
+    font-size: 0.9rem !important;
+  }
 }
 @media print {
   .d-print-inline {
@@ -11284,5 +11343,21 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
+  }
+
+  .admin{
+  display: none !important;
+  }
+
+  .visibility-admin {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
   }
 }

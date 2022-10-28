@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AboutController {
-
-    @GetMapping("/onas")
-    public String getIndex(){
-
-        return "onas";
-    }
-
-
+//
+//    @GetMapping("/onas")
+//    public String getIndex(){
+//
+//        return "onas";
+//    }
+//
+//
 
 }
